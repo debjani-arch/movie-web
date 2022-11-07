@@ -22,8 +22,53 @@ header {
   background-color: var(--secondary-color);
 }
 
+nav{
+  padding: 1rem;
+  background-color: var(--secondary-color);
+}
+
+.navbar-brand{ 
+  color:rgb(212, 218, 255);
+  font-size:xx-large;
+}
+.navbar-brand:hover{ 
+  color:rgb(183, 189, 228);
+  font-size:xx-large; 
+}
+
+.nav-link{
+  color:rgba(229, 232, 255, 0.779);
+  font-size:large;
+  padding: 1ewm;
+  margin: 0.1rem;
+}
+
+.nav-link:hover{
+  color:rgba(40, 61, 196, 0.668);
+  font-size:x-large;
+}
+.nav-link:active{
+  color:rgba(196, 40, 40, 0.668);
+  font-size:x-large;
+}
+.nav-link:focus{
+  color:rgba(146, 166, 255, 0.794);
+  font-size:x-large;
+}
+
+.navbar-toggler{
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler:focus{
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
 .search {
-  background-color: transparent;
+  background-color: rgba(27, 26, 97, 0.833);
   border: 2px solid var(--primary-color);
   border-radius: 50px;
   font-family: inherit;
@@ -33,12 +78,36 @@ header {
 }
 
 .search::placeholder {
-  color: #7378c5;
+  color: #898db7;
 }
 
 .search:focus {
   outline: none;
   background-color: var(--primary-color);
+}
+
+.right-container {
+  display: block;
+  margin-left: auto;
+}
+
+.search-box {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  background: transparent;
+  outline: none;
+  height: 30px;
+  color: #fff;
+  width: 230px;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.search-box:focus {
+  width: 400px;
+  border-color: #1f80e0;
 }
 
 main {

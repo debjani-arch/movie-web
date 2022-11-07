@@ -28,18 +28,19 @@ function showMovies(movies) {
         movieEl.innerHTML = `
             <img src="${IMG_PATH + poster_path}" alt="${title}">
             <div class="movie-info">
-          <h3>${title}</h3>
-          <span class="${getClassByRate(vote_average)}">${vote_average}</span>
+            <h3>${title}</h3>
+            <span class="${getClassByRate(vote_average)}">${vote_average}</span>
             </div>
             <div class="overview">
-          <h3>Overview</h3>
-          ${overview}
-        </div>
+            <h3>Overview</h3>
+            ${overview}
+           </div>
         `
         main.appendChild(movieEl)
     })
 }
 
+ //----------------Rating section-----------------
 function getClassByRate(vote) {
     if(vote >= 8) {
         return 'green'
@@ -49,6 +50,7 @@ function getClassByRate(vote) {
         return 'red'
     }
 }
+//----------------Rating section ends---------------
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -63,3 +65,9 @@ form.addEventListener('submit', (e) => {
         window.location.reload()
     }
 })
+
+// ---------------------upcomming movies section-----------------------------
+
+
+
+// -------------------upcomming movies section ends-----------------------------
